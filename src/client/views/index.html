@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Travel Planner</title>
+   </head>
+
+   <body>
+      <header>
+         <div class="">
+            <h1>Travel Planner</h1>
+            <h2>Prepare for your travel with weather and country info</h2>
+         </div>
+      </header>
+
+      <main>
+         <section id="form">
+            <form id="inputform">
+               <label for="city">Destination:</label>
+               <input type="text" name="place" id="place" value="" placeholder="Enter a city or place" required>
+
+               <label for="country">Destination Country:</label>
+               <select id="country" name="country">
+                  <option value="false"> - - Please select a country - - </option>
+               </select>
+
+               <label for="startDate">Departure Date:</label>
+               <input type="date" name="startDate" id="startDate" value="" placeholder="YYYY-MM-DD" required>
+
+               <label for="endDate">Return Date:</label>
+               <input type="date" name="endDate" id="endDate" value="" placeholder="YYYY-MM-DD" required>
+
+               <div id="error"></div>
+
+               <button id="formButton" type="button">Get the info!</button>
+            </form>
+         </section>
+
+         <section id="results" class="invisible">
+            <div class = "result">
+               <div class = "title"><p class="bold">Travel info:</p></div>
+               <div id = "destination"> </div> 
+               <div id = "duration"> </div> 
+               <div id = "length"> </div> 
+               <div id = "imgdiv"> </div> 
+               <div id = "weather" class="subheader"> 
+                  <div id = "w_title"><p class="bold">Weather info:</p></div>
+                  <div id = "w_block"> 
+                  </div>
+               </div>
+               <div id="countryinfo" class="subheader"> </div>
+            </div>
+            <button id="resultButton" type="button">Plan a new trip!</button>
+         </section> 
+
+      </main>
+
+      <footer>
+         <div id="footertext">
+            <p>© Tamas Peter, 2020</p>
+            <p>Infos are from GeoNames, Weatherbit, REST Countries APIs.</p>
+            <p>Destination images are from <a href="https://pixabay.com/">pixabay</a></p>
+         </div>
+      </footer>
+
+   </body>
+</html>

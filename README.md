@@ -42,9 +42,9 @@ To use this app, you will need an id/key for Geonames API, Weatherbit API and Pi
 and you have to set them as environmental variables.
 
 - Signup for API keys at:
-	http://www.geonames.org/export/web-services.html
-   https://www.weatherbit.io/account/create
-   https://pixabay.com/api/
+  - http://www.geonames.org/export/web-services.html
+  - https://www.weatherbit.io/account/create
+  - https://pixabay.com/api/
 
 - Create a new ```.env``` file in the root of the project folder
 

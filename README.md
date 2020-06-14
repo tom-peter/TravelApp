@@ -12,15 +12,16 @@ For this to achieve, the app uses 4 APIs to
 
 ## Extending the Project Further
 
-Beyond core functionalities, I have implemented the following extra functions:
- -	Add end date and display length of trip.
- -	Pull in an image for the country from Pixabay API when the entered location brings up no results.
- -	Integrate the REST Countries API to pull in data for the country being visited.
- -	Instead of just pulling a single day forecast, pull the forecast for multiple days.
- - Displaying the multi-day-forecast.
+Beyond (required) core functionalities, I have implemented the following extra functions:
+ - Add end date and display length of trip.
+ - Pull in an image for the country from Pixabay API when the entered location brings up no results.
+ - Integrate the REST Countries API to pull in data for the country being visited.
+ - Instead of just pulling a single day forecast, pull the forecast for multiple days.
+ - Displaying multi-day-forecast.
 
 ## In this project I have used
 
+- JavaScript
 - Node.js, Express, Webpack
 - Geonames API, Weatherbit API, Pixabay API and REST Countries API
 - Sass styles
@@ -33,7 +34,7 @@ Beyond core functionalities, I have implemented the following extra functions:
 
 - open the project folder
 - install the necessary node components by running the following command:
-	npm install
+	`npm install`
 
 ## Setting up the API
 
@@ -57,9 +58,8 @@ PIXABAY_API=**************************
 
 ## Launching the app
 
-npm run start			// for launching server-side code
-npm run build-dev		// for launching client-side code with webpack-dev-server
-npm run build-prod	// to build production version in dist folder
-							// then you can run it with live-server
-npm run test			// for testing with Jest
+ - `npm run start`       - for launching server-side code
+ - `npm run build-dev`   - for launching client-side code with webpack-dev-server
+ - `npm run build-prod`  - to build production version in dist folder, then you can run it with live-server
+ - `npm run test`        - for testing with Jest
 
